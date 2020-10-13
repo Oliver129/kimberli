@@ -1,0 +1,115 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/goku1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+**/
+body{
+    text-align: center;
+}
+
+*{
+    background: linear-gradient(45deg, #ccc, orange, #090);
+    opacity: 9;
+    z-index: -1;
+}
+h1{
+    color: red;
+    font-size:30px;   
+}
+h2{
+    background-color: firebrick;
+    color:#000;
+    border-radius: 10px;
+    border:4px solid yellow;
+}
+img{
+    padding: 9px;
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    border:10px solid blue;
+    box-shadow: 10px 8px 20px 0 #990000;
+    transform:rotate(00deg);
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+}
+h3{
+    text-shadow: 2px 4px 10px #000099;
+    border: #000000;
+    font-size: 1.5em;
+}
+.love {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: #990000;
+    cursor:pointer;
+    box-shadow: 4px 8px 30px 0 #009900;
+    
+  }
+.love:before,
+.love:after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #990000;
+    position: absolute;
+  }
+.love {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: #990000;
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+  }
+  
+  
+.love:before {
+    top: 0;
+    left: -25px;
+    content:"tu" ; transform: rotate(-49deg);
+    font-size: 25px;
+}
+.love:after {
+    top: -25px;
+    left: 0;
+    content: "yo";
+    transform: rotate(-49deg);
+    font-size: 25px;
+}
+.love {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: #990000;
+    position: relative;
+    top: 10rem;
+    left: 10rem;
+    animation: beating 2s ease infinite;
+}
+@keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(2);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+}
+}
+
+
+
